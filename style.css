@@ -5,15 +5,15 @@ body {
   margin: 2em;
 }
 
-h1, td i, h2 {
+h1, td i, h2, .blue {
   font-style: italic;
-  color: #373fff;
+  color: #41CEE5;
 }
 
 a {
   text-decoration: none;
   padding: 0px 10px;
-  color: purple;
+  color: #57A8EA;
 }
 
 table, th, td {
