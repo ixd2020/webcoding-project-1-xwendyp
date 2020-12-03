@@ -5,28 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
+    <title>Wendy Assignment 1</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <h1>Hi there!</h1>
-    <a href="#"> Blank link </a>
-    <a href="index.html"> Go to home </a>
-    <a href="csstext2.html"> Go to css text</a>
-  <h1 class="whitetext">
-    Welcome to exercise 4. 
-    </h1>
+    <nav>
+      <h1>
+        <a href="index.html">Logo</a>
+      </h1>
+      <ul class="navbar">
+        <li><a href="painting.html">Paintings</a></li>
+        <li><a href="about.html">About Artist</a></li>
+        <!--or notable works, it's a timeline -->
+        <li><a href="highlight.html">Highlights</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <!-- Test try-->
+    <div class="slideshow-container">
+      <div class="centered textaligncenter whitetext">
+        <h1>
+          Hello<br>
+          Welcome to John La Farge Artist Fan Page
+        </h1>
+      </div>
+      <div class="mySlides dot">
+        <img
+          src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F1.jpg?v=1606964451592"
+          style="width:100%"
+        />
+      </div>
+
+      <div class="mySlides dot">
+        <img
+          src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2Ftest.jpg?v=1605965873892"
+          style="width:100%"
+        />
+      </div>
+
+      <div class="mySlides dot">
+        <img
+          src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2Ftt3.jpg?v=1605965946452"
+          style="width:100%"
+        />
+      </div>
+    </div>
+
+    <!-- End of test try>
+    <!--Hero -->
+    <div class="hero">
+      <h1>Hello</h1>
+      <h2>A page featuring John La Farge Artist</h2>
+    </div>
+    <!-- Art -->
+    <div class="art-content">
+      <h2 class="textaligncenter">Arts</h2>
+      <div class="art-content-imgbox">
+        <div class="art-content-img">
+          <img
+            src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F1.jpg?v=1606358184502"
+          />
+        </div>
+        <div class="art-content-img">
+          <img
+            src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F2.jpg?v=1605752159810"
+          />
+        </div>
+        <div class="art-content-img">
+          <img
+            src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F3.jpg?v=1605752162177"
+          />
+        </div>
+      </div>
+<!--Something weird about this buttonbox, fix if got time-->
+      <div class="button textaligncenter">
+         <a href="#" class="buttonbox">View more</a>
+      </div>
+      
+    </div>
+    <!-- About artist-->
+    <div class="flex mainspace">
+      <div class="flex1">
+        <img
+          src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F1024px-Portrait_of_John_LaFarge.jpg?v=1605968743923"
+        />
+      </div>
+      <div class="flex1">
+        <h2>
+          About
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          sodales, tortor eu consequat ornare, leo ipsum dictum felis, eget
+          laoreet ante elit in dolor. Morbi sodales nisi dui, in tincidunt quam
+          venenatis sit amet. Maecenas mollis dictum libero. Suspendisse
+          potenti. Nunc at fringilla est, quis malesuada nisl. Aenean cursus
+          turpis et scelerisque convallis. Integer mollis nulla quis tincidunt
+          porttitor. Integer quis sodales libero.
+        </p>
+        <div class="button">
+        <a href="#" class="invbuttonbox">View more ⇢</a>
+      </div>
+      </div>
+    </div>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <!--     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script> -->
   </body>
 </html>

@@ -1,115 +1,159 @@
 /* CSS files add styling rules to your content */
+/*remember to remove the font family in * */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 2em;
-  background-image: url("https://cdn.glitch.com/c92052a7-8661-4d82-bd8c-b65bd0de6618%2Fryunosuke-kikuno-OycD8fqr4Yc-unsplash%20(1).jpg?v=1605150653609");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-h1 {
-  font-style: italic;
-  color: #373fff;
-  font-weight: 300px;
+/*Navbar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.box {
-  float: left;
-  padding: 50px;
-  height: 300px;
+.navbar {
+  list-style-type: none;
+  display: flex;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: black;
+  padding: 20px;
+  margin: 0;
 }
 
-.redbox {
-  background-color: red;
-  overflow: auto;
-  border: 2px dotted #ffffff;
+.navbar li a:hover {
+  color: #0369be;
+  border-bottom: 3px solid black;
+  transition-duration: 0.8s;
 }
-.yellowbox {
-  background-color: yellow;
-  font-size: 10px;
-  border: 2px dotted #ffffff;
+/*For all pages*/
+.textaligncenter {
+  text-align: center;
 }
-.bluebox {
-  background-color: blue;
-  color:white;
-  border: 2px dotted #ffffff;
+.textalignright{
+  text-align: right;
 }
-.greenbox {
-  background-color: green;
-  border: 2px dotted #ffffff;
+h2 {
+  margin: 30px 0;
 }
-.blackbox {
-  background-color: #000000;
-  color: #ffffff;
-  border: 2px dotted #ffffff;
-}
-
-.onecol {
+img {
   width: 100%;
-  margin: 10px 0px;
-}
-
-.twocol {
-  width: 50%;
-}
-
-.threecol {
-  width: 33.33%;
+  height: 100%;
 }
 a {
-  border: 1px solid purple;
   text-decoration: none;
 }
-
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-  background-color: lightblue;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
-.attribution {
-  width: 380px;
-  height: 200px;
-  background: white;
-  border: 1px solid lightblue;
-  margin:10px;
-}
-
-#blackbox:hover{
-  background-color: #ffffff;
-  color:#000000;
-}
-
-.snowman{
-  width:20%;
-  float: right;
-}
 .whitetext{
-  color:white;
+  color: #ffffff;
+}
+/* .buttonbox a:hover {
+  color: #0369be;
+} */
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
   padding: 20px;
 }
+.flex2 {
+  flex: 2;
+  padding: 20px;
+}
+.mainspace {
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+/*test try*/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*end of test try*/
+/*home page*/
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 20px;
+  margin: 100px 0;
+}
+.art-content {
+  align-content: center;
+}
+.art-content-imgbox {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.art-content-img {
+  margin: 10px;
+}
+.invbuttonbox {
+  text-align: center;
+  border: solid 2px transparent;
+  color: #0369be;
+  width: 160px;
+  padding: 10px 30px;
+  margin: 20px 0;
+}
+.invbuttonbox:hover {
+  border: solid 2px #0369be;
+  transition-duration: 1s;
+}
+.button{
+  margin:30px auto;
+}
+
+.buttonbox {
+  text-align: center;
+  border: solid 2px transparent;
+  background-color: black;
+  padding: 10px 30px;
+  margin: 20px auto;
+  color: white;
+}
+.buttonbox:hover {
+  border: solid 2px black;
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+}
+/* About Page  */
+.about-quotes{
+  background-color: #2998e2;
+  padding: 30px;
+}
+.about-quotes p{
+  width:80%;
+}
+
+/*media query*/
+
+/*
+@media screen and (max-width:800px) {
+  
+  }
+}
+
+*/
