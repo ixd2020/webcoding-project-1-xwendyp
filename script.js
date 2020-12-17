@@ -24,6 +24,7 @@ function subscribe() {
 }
 
 
+
 //accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
