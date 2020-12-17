@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>John's Highlight</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- import the webpage's javascript file -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>-->
+
+    <script src="js/isotope.min.js"></script>
+    <script src="script.js"></script>
+
+
+</head>
+
+<body class="bg-animation">
+    <nav id="topnav" class="topnav">
+        <div class="mobilelogo"><a href="index.html"><img src="img/assets/logo.png"></a></div>
+        <ul class="navbar">
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="about.html">About Artist</a></li>
+            <li><a href="highlight.html">Highlights</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="mobilemenu" onclick="myFunction(this)">
+            <a href="#" onclick="mobilemenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </nav>
+    <div class="hero">
+        <h1 class="textaligncenter">Artworks</h1>
+        <p class="textaligncenter">John La Farge Works</p>
+    </div>
+
+    <!--   Card sorting  -->
+    <div class="button-group filters-button-group">
+        <button class="paintingbutton is-checked" data-filter="*">All</button>
+        <button class="paintingbutton" data-filter=".painting">Paintings</button>
+        <button class="paintingbutton" data-filter=".gdrawing">Graphic Drawings</button>
+        <button class="paintingbutton" data-filter=".watercolor">Water Color</button>
+        <button class="paintingbutton" data-filter=".woodengraving">Wood Engraving</button>
+        <button class="paintingbutton" data-filter=".stainedglass">Stained Glass</button>
+        <button class="paintingbutton" data-filter=".others">Others</button>
+    </div>
+
+    <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+        <article class="watercolor card">
+            <img src="img/painting/C5.jpg" class="img-responsive" />
+            <h3>Marine</h3>
+            <h4>1883(?)</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C1.jpg" class="img-responsive" />
+            <h3>Portrait of the Painter</h3>
+            <h4>1859</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C2.jpg" class="img-responsive" />
+            <h3>Nocturne</h3>
+            <h4>ca. 1855</h4>
+        </article>
+
+        <article class="painting card">
+            <img src="img/painting/C4.jpg" class="img-responsive" />
+            <h3>Autumn Study, View over Hanging Rock, Newport, R.I.</h3>
+            <h4>1868</h4>
+        </article>
+
+        <article class="watercolor card">
+            <img src="img/painting/C6.jpg" class="img-responsive" />
+            <h3>A Bacchante</h3>
+            <h4>1897</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C3.jpg" class="img-responsive" />
+            <h3>The Great Statue of Amida Buddha at Kamakura, Known as the Daibutsu, from the Priest's Garden</h3>
+            <h4>1877</h4>
+        </article>
+        <article class="gdrawing card">
+            <img src="img/painting/C7.jpg" class="img-responsive" />
+            <h3>"Welcome": Study for a Window</h3>
+            <h4>1909</h4>
+        </article>
+        <article class="watercolor card">
+            <img src="img/painting/C8.jpg" class="img-responsive" />
+            <h3>A Brittany Beadle- Sketch from Nature</h3>
+            <h4>1856</h4>
+        </article>
+        <article class="gdrawing card">
+            <img src="img/painting/C9.jpg" class="img-responsive" />
+            <h3>Father Hecker Reading Goethe</h3>
+            <h4>1866</h4>
+        </article>
+        <article class="woodengraving card">
+            <img src="img/painting/C10.jpg" class="img-responsive" />
+            <h3>The Nativity</h3>
+            <h4>N.D</h4>
+        </article>
+        <article class="woodengraving card">
+            <img src="img/painting/C11.jpg" class="img-responsive" />
+            <h3>Noh Dancer</h3>
+            <h4>CA. 1866</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C12.jpg" class="img-responsive" />
+            <h3>Girls Carrying a Canoe, Vaiala in Samoa</h3>
+            <h4>1891</h4>
+        </article>
+        <article class="stainedglass card">
+            <img src="img/painting/C18.jpg" class="img-responsive" />
+            <h3>Peacocks and the Peonies ll</h3>
+            <h4>1882</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C13.jpg" class="img-responsive" />
+            <h3>Wild Roses and Irises</h3>
+            <h4>877</h4>
+        </article>
+        <article class="gdrawing card">
+            <img src="img/painting/C14.jpg" class="img-responsive" />
+            <h3>Old Pagoda</h3>
+            <h4>1890</h4>
+        </article>
+        <article class="painting card">
+            <img src="img/painting/C15.jpg" class="img-responsive" />
+            <h3>Wreath of Flowers</h3>
+            <h4>1866</h4>
+        </article>
+        <article class="others card">
+            <img src="img/painting/C16.jpg" class="img-responsive" />
+            <h3>Apollo with Cupids</h3>
+            <h4>1880-1882</h4>
+        </article>
+        <article class="stainedglass card">
+            <img src="img/painting/C17.jpg" class="img-responsive" />
+            <h3>Peacocks and the Peonies l</h3>
+            <h4>1882</h4>
+        </article>
+
+        <article class="painting card">
+            <img src="img/painting/C19.jpg" class="img-responsive" />
+            <h3>Water Lily in Sunlight</h3>
+            <h4>1883</h4>
+        </article>
+        <article class="stainedglass card">
+            <img src="img/painting/C20.jpg" class="img-responsive" />
+            <h3>Peonies in the Wind Borders</h3>
+            <h4>CA. 1893</h4>
+        </article>
+        <article class="gdrawing card">
+            <img src="img/painting/C21.jpg" class="img-responsive" />
+            <h3>There was a Spray a Bird Clung to</h3>
+            <h4>1861</h4>
+        </article>
+
+        <article class="painting card">
+            <img src="img/painting/C22.jpg" class="img-responsive" />
+            <h3>Visit of Nicodemus to Christ</h3>
+            <h4>1880</h4>
+        </article>
+        <article class="stainedglass card">
+            <img src="img/painting/C23.jpg" class="img-responsive" />
+            <h3>Welcome: Stained Glass Window from the Mrs George T.Bliss House, New York</h3>
+            <h4>1908-9</h4>
+        </article>
+        <article class="watercolor gdrawing card">
+            <img src="img/painting/C24.jpg" class="img-responsive" />
+            <h3>Sheep Porcupine Island, Bar Harbour, Maine, Evening Study</h3>
+            <h4>1896</h4>
+        </article>
+    </section>
+    <!--bg animation-->
+    <ul class="bg-animation-box">
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li></li>
+        <li class="corners-box-35"></li>
+        <li class="circle-box"></li>
+        <li></li>
+    </ul>
+    <footer>
+        <div class="flex whitespace">
+            <div class="flex2">
+                <h3>About</h3>
+                <p>I'm a Nanyang Polytechnic student. Creating this artist's fan page is simply something of an inspiration, part of my assignment and spreading my joy with you.<br>
+                    While I may not be a good coder, I hope that what I do will inspire you<br>
+                    Cheers ~</p>
+            </div>
+            <div class="flex1">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="about.html">About Artist</a></li>
+                    <!--or notable works, it's a timeline -->
+                    <li><a href="highlight.html">Highlights</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="whitespace" style="height:2px; border:none;background-color:#000000;">
+        <div class="flex whitespace">
+            <div class="flex1">
+                <p>Copyright © 2020 All Rights Reserved by Wendy</p>
+            </div>
+            <ul class="socialmedia flex1">
+                <li><a class="fb" target="_blank" href="http://www.facebook.com"></a></li>
+                <li><a class="in" target="_blank" href="http://www.instagram.com"></a></li>
+                <li><a class="tw" target="_blank" href="http://www.twitter.com"></a></li>
+
+
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // external js: isotope.pkgd.js
+        $(function() {
+            var $grid = $('.grid').isotope({
+                itemSelector: 'article'
+            });
+
+            // filter buttons
+            $('.filters-button-group').on('click', 'button', function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+            $('.button-group').each(function(i, buttonGroup) {
+                var $buttonGroup = $(buttonGroup);
+                $buttonGroup.on('click', 'button', function() {
+                    $buttonGroup.find('.is-checked').removeClass('is-checked');
+                    $(this).addClass('is-checked');
+                });
+            });
+        });
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            return function debounced() {
+                if (timeout) {
+                    clearTimeout(timeout);
+                }
+
+                function delayed() {
+                    fn();
+                    timeout = null;
+                }
+                timeout = setTimeout(delayed, threshold || 100);
+            }
+        }
+
+        $(window).bind("load", function() {
+            $('#all').click();
+        });
+
+    </script>
+
+</body>
+
+</html>

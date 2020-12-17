@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,62 +9,150 @@
     <title>About John's La Farge</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <nav>
-      <h1>
-        <a href="index.html">Logo</a>
-      </h1>
-      <ul class="navbar">
-        <li><a href="painting.html">Paintings</a></li>
-        <li><a href="about.html">About Artist</a></li>
-        <!--or notable works, it's a timeline -->
-        <li><a href="highlight.html">Highlights</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-animation">
+    <nav id="topnav" class="topnav">
+        <div class="mobilelogo"><a href="index.html"><img src="img/assets/logo.png"></a></div>
+        <ul class="navbar">
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="about.html">About Artist</a></li>
+            <li><a href="highlight.html">Highlights</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="mobilemenu" onclick="myFunction(this)">
+            <a href="#" onclick="mobilemenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
     </nav>
-<!-- About artist     -->
-     <div class="flex mainspace">
-      <div class="flex1">
-        <h2>
-          About
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          sodales, tortor eu consequat ornare, leo ipsum dictum felis, eget
-          laoreet ante elit in dolor. Morbi sodales nisi dui, in tincidunt quam
-          venenatis sit amet. Maecenas mollis dictum libero. Suspendisse
-          potenti. Nunc at fringilla est, quis malesuada nisl. Aenean cursus
-          turpis et scelerisque convallis. Integer mollis nulla quis tincidunt
-          porttitor. Integer quis sodales libero.
+    <div class="hero">
+        <h1 class="textaligncenter">About</h1>
+        <p class="textaligncenter">John La Farge studied law and received a master degree. The legal profession did not appeal to him and began to study art as his twenty-first birthday present. La Farge is one of the first few western artists to become interested in Japanese art. Not only that he is also a modernist drive to experiment with materials and to explore space and time, roaming across global cultures and past eras. Despite having many accomplishments, he was not a successful businessman, as he faced several bankruptcies in his career.
         </p>
-        <a href="#whathedoes">What he does</a>
-      </div>
-       <div class="flex1">
-        <img
-          src="https://cdn.glitch.com/f8cf4885-2fcf-4286-b326-69aa7a3b87e7%2F1024px-Portrait_of_John_LaFarge.jpg?v=1605968743923"
-        />
-      </div>
     </div>
-<!--  Quotes    -->
+    <!-- About artist     -->
+    <div class="flex mainspace tabletsize">
+        <div class="flex1">
+            <h2>
+                John La Farge
+            </h2>
+            <p>
+                John La Farge was born in New York City, the son of wealthy French emigrants, his father having been a refugee from the ill-fated Napoleonic expedition to San Domingo. La Farge started drawing at an early age and graduated from the Roman Catholic Mount St. Mary's College in Maryland. He went to Europe in 1856, worked briefly in Paris under the painter Thomas Couture, and travelled through northern Europe. He returned to Newport, the United States, to study with William Morris Hunt.
+            </p>
+            <p>
+                He is one of the first American artists to import and be inspired by Japanese colour prints (1863). With Henry Adams, he made a trip to Japan in 1886, later publishing An Artist's Letters from Japan (1897).
+            </p>
+
+            <a href="#whathedoes" class="padding indexbar">What he does</a><br>
+            <a href="#mural" class="padding indexbar">About his mural commission</a>
+
+        </div>
+        <div class="flex1">
+            <img src="img/home/1024px-Portrait_of_John_LaFarge.jpg" />
+        </div>
+    </div>
+    <!--  Quotes    -->
     <div class="about-quotes textaligncenter">
-      <h2>
-        The past, though it cannot be relived, can always be repaired.
-      </h2>
-      <p class="textalignright">
-        Text
-      </p>
-      
+        <h2>
+            The past, though it cannot be relived, can always be repaired.
+        </h2>
+        <p style="text-align: right">
+            John La Farge
+        </p>
+
     </div>
-<!-- What he does     -->
-    <div>
-      <h2 id="whathedoes" class="textaligncenter">
+    <!-- What he does     -->
+    <h2 id="whathedoes" class="textaligncenter">
         What he does
-      </h2>
+    </h2>
+    <div class="flex mainspace">
+        <div class="flex1">
+            <ul>
+                <li>Painting</li>
+                <li>Illustration</li>
+                <li>Interior Design</li>
+            </ul>
+        </div>
+        <div class="flex1">
+            <ul>
+                <li>Books</li>
+                <li>Stained Glass</li>
+                <li>Writings</li>
+            </ul>
+        </div>
     </div>
-  </body>
+    <div id="mural" class="flex mainspace about-quotes">
+        <div class="flex1">
+            <img src="img/about/Ascension-lafarge.jpg">
+        </div>
+        <div class="flex1">
+            <p>
+                La Farge received his first large-scale commission in 1876. In Copley Square, Boston, he completed an entire complex of mural decorations for Richardson's distinguished Trinity Church.
+            </p>
+            <p>
+                La Farge worked out a way to produce opalescent glass and had several commissions for stained glass windows from churches and private patrons. Lafarge had several major commission and continued painting and accepting commissions for mural work. Perhaps the best-known mural is the great apse mural of the Ascension of Christ in the Church of the Ascension in New York City, completed in 1887.
+            </p>
+        </div>
+    </div>
+    <h2 class="textaligncenter">Check out the complete works of John La Farge</h2>
+    <div class="mainspace">
+        <div class="about-video">
+            <iframe src="https://www.youtube.com/embed/MYk-BSZDSF4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <ul class="bg-animation-box">
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li></li>
+        <li class="corners-box-35"></li>
+        <li class="circle-box"></li>
+        <li></li>
+    </ul>
+    <footer>
+        <div class="flex whitespace">
+            <div class="flex2">
+                <h3>About</h3>
+                <p>I'm a Nanyang Polytechnic student. Creating this artist's fan page is simply something of an inspiration, part of my assignment and spreading my joy with you.<br>
+                    While I may not be a good coder, I hope that what I do will inspire you<br>
+                    Cheers ~</p>
+            </div>
+            <div class="flex1">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="about.html">About Artist</a></li>
+                    <!--or notable works, it's a timeline -->
+                    <li><a href="highlight.html">Highlights</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="whitespace" style="height:2px; border:none;background-color:#000000;">
+        <div class="flex whitespace">
+            <div class="flex1">
+                <p>Copyright © 2020 All Rights Reserved by Wendy</p>
+            </div>
+            <ul class="socialmedia flex1">
+                <li><a class="fb" target="_blank" href="http://www.facebook.com"></a></li>
+                <li><a class="in" target="_blank" href="http://www.instagram.com"></a></li>
+                <li><a class="tw" target="_blank" href="http://www.twitter.com"></a></li>
+
+
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
 </html>

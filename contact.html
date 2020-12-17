@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,23 +9,171 @@
     <title>Contact Me</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <nav>
-      <h1>
-        <a href="index.html">Logo</a>
-      </h1>
-      <ul class="navbar">
-        <li><a href="painting.html">Paintings</a></li>
-        <li><a href="about.html">About Artist</a></li>
-        <!--or notable works, it's a timeline -->
-        <li><a href="highlight.html">Highlights</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-animation">
+    <nav id="topnav" class="topnav">
+        <div class="mobilelogo"><a href="index.html"><img src="img/assets/logo.png"></a></div>
+        <ul class="navbar">
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="about.html">About Artist</a></li>
+            <li><a href="highlight.html">Highlights</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="mobilemenu" onclick="myFunction(this)">
+            <a href="#" onclick="mobilemenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
     </nav>
-  </body>
+
+    <div class="hero">
+        <h1 class="textaligncenter">Contact Me</h1>
+        <p class="textaligncenter">Wanted to see more of this? Or contact me for business?<br>
+            Just fill out the form and it will drop straight to my mailbox.
+        </p>
+    </div>
+    <div class="">
+        <ul class="bg-animation-box">
+            <li class="circle-box"></li>
+            <li class="corners-box-20"></li>
+            <li class="circle-box"></li>
+            <li class="corners-box-20"></li>
+            <li></li>
+            <li class="corners-box-35"></li>
+            <li class="circle-box"></li>
+            <li></li>
+        </ul>
+
+    </div>
+    <div class="contact-me">
+        <div class="container flex2">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" placeholder="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Category</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="category" required>
+                            <option disabled="" selected="">Please select a category</option>
+                            <option value="business">Business</option>
+                            <option value="recommend">Recommend</option>
+                            <option value="qna">Questions</option>
+                            <option value="other">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="What would you like to tell me?" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="flex1">
+            <h3 class="textaligncenter">Frequently Asked Questions</h3>
+            <button class="accordion">I would like to know more about La farge</button>
+            <div class="panel">
+                <p>
+                    We know that you are. There are a variety of other sources than mine. Some of the websites you may want to check out about La farge are:
+                    <a href="http://edan.si.edu/saam/id/person-institution/2760" target="_blank">edan.si.edu</a> and
+                    <a href="https://www.metmuseum.org/" targer="_blank">metmuseum.org/</a>
+                </p>
+            </div>
+
+            <button class="accordion">Media Inquiries</button>
+            <div class="panel">
+                <p>For questions regarding events, interviews, or content requests, etc. please fill up the form or via email: <a href="mailto:xwendypun@gmail.com">xwendypun@gmail.com</a>
+                </p>
+            </div>
+
+            <button class="accordion">Who am I</button>
+            <div class="panel">
+                <p>I am a year 1 student studying in interaction design.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of form-->
+    <footer>
+        <div class="flex whitespace">
+            <div class="flex2">
+                <h3>About</h3>
+                <p>I'm a Nanyang Polytechnic student. Creating this artist's fan page is simply something of an inspiration, part of my assignment and spreading my joy with you.<br>
+                    While I may not be a good coder, I hope that what I do will inspire you<br>
+                    Cheers ~</p>
+            </div>
+            <div class="flex1">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="about.html">About Artist</a></li>
+                    <!--or notable works, it's a timeline -->
+                    <li><a href="highlight.html">Highlights</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="whitespace" style="height:2px; border:none;background-color:#000000;">
+        <div class="flex whitespace">
+            <div class="flex1">
+                <p>Copyright © 2020 All Rights Reserved by Wendy</p>
+            </div>
+            <ul class="socialmedia flex1">
+                <li><a class="fb" target="_blank" href="http://www.facebook.com"></a></li>
+                <li><a class="in" target="_blank" href="http://www.instagram.com"></a></li>
+                <li><a class="tw" target="_blank" href="http://www.twitter.com"></a></li>
+
+
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("accordion-active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
 </html>

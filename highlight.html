@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,23 +9,135 @@
     <title>John's Highlight</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <nav>
-      <h1>
-        <a href="index.html">Logo</a>
-      </h1>
-      <ul class="navbar">
-        <li><a href="painting.html">Paintings</a></li>
-        <li><a href="about.html">About Artist</a></li>
-        <!--or notable works, it's a timeline -->
-        <li><a href="highlight.html">Highlights</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-animation">
+    <nav id="topnav" class="topnav">
+        <div class="mobilelogo"><a href="index.html"><img src="img/assets/logo.png"></a></div>
+        <ul class="navbar">
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="about.html">About Artist</a></li>
+            <li><a href="highlight.html">Highlights</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="mobilemenu" onclick="myFunction(this)">
+            <a href="#" onclick="mobilemenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
     </nav>
-  </body>
+
+    <div class="hero">
+        <h1 class="textaligncenter">Highlight</h1>
+        <p class="textaligncenter">John La farge has done a lot of artworks and this is some of the highlights that I recommend checking it out.</p>
+    </div>
+    <!--1-->
+    <div class="flex mainspace">
+        <div class="flex1">
+            <img src="img/painting/C1.jpg">
+        </div>
+        <div class="flex1">
+            <h2>Portrait of the Painter</h2>
+            <p>
+                This self-portrait, painted by La Farge at his family's estate in Glen Cove, Long Island, in October 1859, illustrates the use of a picture as a picturesque source showing the pleasure of the unmodulated forms, flattened space of Japanese prints and his reliance on broad tonal masses in the manner of his teachers, Thomas Couture and William Morris Hunt.
+            </p>
+            <p>
+                <b>Date:</b> 1859 <br>
+                <b>Medium:</b> Oil on wood panel <br>
+                <b>Classification:</b> Paintings
+            </p>
+
+        </div>
+    </div>
+    <!--2-->
+    <div class="flex mainspace">
+        <div class="flex1">
+            <h2>Nocturne</h2>
+            <p>
+                La Farge used the medium to research, document his travels and paint exquisite floral still-life exhibition pieces in his illustrations and decorative projects. It typifies those still lifes in its quiet mood and gives echoes of Japanese asymmetrical composition and large tonal planes.
+            </p>
+            <p>
+                <b>Date:</b> CA. 1885 <br>
+                <b>Medium:</b> Watercolor, gouache, and charcoal on off-white wove paper adhered to wove paper
+
+                <br>
+                <b>Classification:</b> Drawings
+            </p>
+        </div>
+        <div class="flex1">
+            <img src="img/painting/C2.jpg">
+        </div>
+    </div>
+    <!--3-->
+    <div class="flex mainspace">
+        <div class="flex1">
+            <img src="img/painting/C3.jpg">
+        </div>
+        <div class="flex1">
+            <h2>The Great Statue of Amida Buddha at Kamakura, Known as the Daibutsu, from the Priest's Garden</h2>
+            <p>
+                La Farge uses watercolour to create studies for illustrations and to paint sheets for exhibition on a trip to Japan with Henry Adams in 1886. Upon his return to New York, he executed this bold and monumental composition, using watercolour sketch made during his journeys, as well as the photographs he and Adams had taken. The Daibutsu, or Great Buddha, a fifty-foot-high bronze cast in 1252, is known for its massive height, its peaceful demeanour, and its unique open-air environment surrounded by mountains and trees.
+            </p>
+            <p>
+                <b>Date:</b> 1887 <br>
+                <b>Medium:</b> Watercolor and gouache on off-white wove paper <br>
+                <b>Classification:</b> Drawings
+            </p>
+        </div>
+    </div>
+    <!-- bg animation -->
+    <ul class="bg-animation-box">
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li class="circle-box"></li>
+        <li class="corners-box-20"></li>
+        <li></li>
+        <li class="corners-box-35"></li>
+        <li class="circle-box"></li>
+        <li></li>
+    </ul>
+    <footer>
+        <div class="flex whitespace">
+            <div class="flex2">
+                <h3>About</h3>
+                <p>I'm a Nanyang Polytechnic student. Creating this artist's fan page is simply something of an inspiration, part of my assignment and spreading my joy with you.<br>
+                    While I may not be a good coder, I hope that what I do will inspire you<br>
+                    Cheers ~</p>
+            </div>
+            <div class="flex1">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="about.html">About Artist</a></li>
+                    <!--or notable works, it's a timeline -->
+                    <li><a href="highlight.html">Highlights</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="whitespace" style="height:2px; border:none;background-color:#000000;">
+        <div class="flex whitespace">
+            <div class="flex1">
+                <p>Copyright © 2020 All Rights Reserved by Wendy</p>
+            </div>
+            <ul class="socialmedia flex1">
+                <li><a class="fb" target="_blank" href="http://www.facebook.com"></a></li>
+                <li><a class="in" target="_blank" href="http://www.instagram.com"></a></li>
+                <li><a class="tw" target="_blank" href="http://www.twitter.com"></a></li>
+
+
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
 </html>
