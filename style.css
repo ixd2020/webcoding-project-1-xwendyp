@@ -44,7 +44,7 @@ nav {
 
 /*for mobile nav*/
 .hamburger {
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
     display: none;
 }
@@ -55,13 +55,13 @@ nav {
     cursor: pointer;
     display: none;
 }
-
+/*Mobile nav*/
 .bar1,
 .bar2,
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #000000;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -103,17 +103,7 @@ a:active {
 
 /*For all pages*/
 /*fonts*/
-h1,
-h2,
-h3,
-h4,
-h5,
-nav ul li a,
-.paintingbutton,
-.button a,
-label,
-.accordion,
-select {
+h1, h2, h3, h4, h5, nav ul li a, .paintingbutton, .button a, label, .accordion, select {
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -127,11 +117,7 @@ h2 {
 }
 
 
-p,
-a,
-input,
-option,
-textarea {
+p, a, input, option, textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -367,16 +353,16 @@ footer {
 .buttonbox {
     text-align: center;
     border: solid 2px transparent;
-    background-color: black;
+    background-color: #000000;
     padding: 10px 30px;
     margin: 20px auto;
     color: white;
 }
 
 .buttonbox:hover {
-    border: solid 2px black;
+    border: solid 2px #000000;
     background-color: white;
-    color: black;
+    color: #000000;
     transition-duration: 1s;
 }
 
@@ -410,7 +396,6 @@ footer {
 
 /*Artwork page*/
 .paintingbutton {
-    /*  display: inline-block;*/
     padding: 0.5em 1.0em;
     background: #ffffff;
     font-size: 16px;
@@ -456,11 +441,6 @@ img {
 .card h4 {
     padding: 10px;
 }
-
-/*
-.grid-container {
-    margin: 0 auto;
-}*/
 
 .grid article {
     background-color: #FFFFFF;
@@ -690,7 +670,7 @@ input[type=submit]:hover {
 }
 
 /*media query*/
-
+/*tablet*/
 @media screen and (max-width:992px) {
     .grid article {
         width: 48%;
@@ -725,15 +705,18 @@ input[type=submit]:hover {
         margin: 50px auto 80px auto;
     }
 
+    /*index animation text*/
     .animationtext {
         font-size: 1.7em;
         letter-spacing: 0.2em;
     }
 
+
+/*mobile*/
     @media screen and (max-width:600px) {
         .animationtext {
             font-size: 1.3em;
-            letter-spacing: 0.2em;
+            
         }
 
         .grid article {
